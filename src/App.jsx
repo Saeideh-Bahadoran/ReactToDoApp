@@ -1,26 +1,19 @@
-
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './Navbar'
-
+import { useState } from "react";
 import "./App.css";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Sidebar from "./Sidebar";
 
 function App() {
-  const [count, setCount] = useState(0)
-// comment 
+  const [count, setCount] = useState(0);
+  // comment
   return (
-    
-      <div>
-       
-        <Navbar/>
-
-        <Footer />
-
-      </div>
-  )
+    <div>
+      <Navbar />
+      <Sidebar />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

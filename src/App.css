@@ -4,46 +4,102 @@
   padding: 2rem;
   text-align: center;
 }
-
+/*NavBar css*/
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-.icon-logo{
- width: 50px;
- height: 50px;
- 
+.icon-logo {
+  width: 50px;
+  height: 50px;
 }
-.navItems{
-
+.navItems {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-color: #5a53bc; /* Example background color */
-    padding: 10px 10px; /* Example padding */
-    z-index: 1000; /* Ensure it appears above other content */
-  }
-  .appName{
-    padding: 15px;
-    font-family: serif;
-    color: #cad9e3;
-    font-size: large;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #5a53bc; /* Example background color */
+  padding: 10px 10px; /* Example padding */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.appName {
+  padding: 15px;
+  font-family: serif;
+  color: #cad9e3;
+  font-size: large;
+}
+
+/*NavBar css*/
+
+/*Footer css*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5a53bc; /* Example background color */
+  color: white; /* Example text color */
+  text-align: center; /* Center text horizontally */
+}
+.footerItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerImage {
+  left: 0;
+  max-width: 100px; /* Limit image width to 100px */
+  max-height: 100px; /* Limit image height to 50px */
+}
+
+/*Footer css*/
+
+/*Sidebarcss*/
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 130px; /* Adjust the width as needed */
+  background-color: #5a53bc; /* Example background color */
+  color: white; /* Example text color */
+  padding: 1px; /* Reduce padding */
+  display: flex;
+  flex-direction: column; /* Display items in a column */
+  justify-content: center; /* Align items at the top */
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: white;
+  text-align: center;
+}
+/*Sidebar css*/
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
