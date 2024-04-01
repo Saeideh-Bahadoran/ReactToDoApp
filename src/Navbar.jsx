@@ -1,13 +1,17 @@
 
-import IconLogo from "./src/assets/todo-icon.png"
+import IconLogo from "./assets/todo-icon.png"
 function Navbar(){
     return(
         <nav className="navbar">
-            
-            <section className="AppName">TimeMaster</section>
-            <div className="icon">
-                 <img src= {IconLogo} className="icon-logo"/>
+            <div className="navItems">
+                
+                <div className="icon">
+                <img src= {IconLogo} className="icon-logo" />
+                </div> 
+                <div className="appName">TimeMaster</div>
+           
             </div>
+            
             
         </nav>
 

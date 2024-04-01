@@ -11,9 +11,39 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo.icon-logo{
-  
+.icon-logo{
+ width: 50px;
+ height: 50px;
+ 
 }
+.navItems{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #5a53bc; /* Example background color */
+    padding: 10px 10px; /* Example padding */
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  .appName{
+    padding: 15px;
+    font-family: serif;
+    color: #cad9e3;
+    font-size: large;
+  }
+  
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
