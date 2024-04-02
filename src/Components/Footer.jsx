@@ -1,6 +1,6 @@
 // Footer.jsx
 import React from "react";
-import footerImage from "./assets/githubIcon.png";
+import footerImage from "../assets/githubIcon.png";
 const Footer = () => {
   return (
     <footer className="footer">
