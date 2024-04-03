@@ -1,9 +1,15 @@
 import React from "react";
+import tasksData from "../../tasks.json";
 
-const TaskDetailsPage = () => {
+const TaskDetailsPage = (currentTask) => {
+  const TaskDetail = tasksData.find(
+    (newTask) => newTask.task === currentTask.task
+  );
+
   return (
     <>
-      <h1>hello tasks page </h1>;
+      <h1>hi</h1>
+      <div>{TaskDetail.task}</div>
     </>
   );
 };
