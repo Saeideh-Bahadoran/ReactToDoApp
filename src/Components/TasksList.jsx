@@ -12,8 +12,8 @@ const TasksList = () => {
 
   return (
     <>
-      <ul>
-        {tasks.map((item) => {
+      <ul className="taskList">
+        {tasks.length>0 && tasks.map((item) => {
           return(
           <div key={item.id}>
             
@@ -25,6 +25,7 @@ const TasksList = () => {
           
           </div>
         )})}
+        {tasks.length===0 && <div style={{fontWeight:"bold"}}>There is no task!  </div>}
       </ul>
     </>
   );
