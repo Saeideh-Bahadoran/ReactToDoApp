@@ -1,15 +1,18 @@
 // Sidebar.jsx
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
         <li>
-          <a href="/">Home</a>
+          <NavLink to="/" exact>
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="/about">About</a>
+          <NavLink to="/AboutPage">About</NavLink>
         </li>
       </ul>
     </div>

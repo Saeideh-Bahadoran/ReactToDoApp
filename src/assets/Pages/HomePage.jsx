@@ -1,9 +1,10 @@
 import React from "react";
+import TasksList from "../../Components/TasksList";
 
 const HomePage = () => {
   return (
     <>
-      <h1>hello</h1>; console.log("hi");
+      <TasksList />
     </>
   );
 };

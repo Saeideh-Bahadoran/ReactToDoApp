@@ -21,21 +21,13 @@ function App() {
       <Footer />
 
       <Routes>
-        <Route path="/homepage" element={<HomePage />} />
-        <Route path="/aboutpage" element={<AboutPage />} />
-        <Route path="/notfound" element={<NotFoundPage />} />
-        <Route path="/taskdetails" element={<TaskDetailsPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/AboutPage" element={<AboutPage />} />
+        <Route path="/NotFoundPage" element={<NotFoundPage />} />
+        <Route path="/TaskDetailsPage" element={<TaskDetailsPage />} />
       </Routes>
     </div>
   );
 }
-
-/** <div className="pages">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/students/:studentId" element={<StudentDetailsPage />} />
-          <Route path="/profile" element={<UserProfilePage />} />
-        </Routes>
-      </div> */
 
 export default App;
