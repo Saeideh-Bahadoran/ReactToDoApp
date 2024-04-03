@@ -7,12 +7,12 @@ const Sidebar = () => {
     <div className="sidebar">
       <ul>
         <li>
-          <NavLink to="/" exact>
+          <NavLink to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/AboutPage">About</NavLink>
+          <NavLink to="/about">About</NavLink>
         </li>
       </ul>
     </div>

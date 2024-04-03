@@ -129,3 +129,7 @@
 .read-the-docs {
   color: #888;
 }
+
+.item{
+display: flex;
+}

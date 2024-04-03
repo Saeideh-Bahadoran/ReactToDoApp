@@ -22,9 +22,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/AboutPage" element={<AboutPage />} />
-        <Route path="/NotFoundPage" element={<NotFoundPage />} />
-        <Route path="/TaskDetailsPage" element={<TaskDetailsPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/not-found" element={<NotFoundPage />} />
+        <Route path="/task-details/:taskId" element={<TaskDetailsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
   );
