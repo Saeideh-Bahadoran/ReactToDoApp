@@ -2,7 +2,6 @@ import React from "react";
 import tasksData from "../../tasks.json";
 import { useParams, Link } from 'react-router-dom';
 
-
 const TaskDetailsPage = () => {
   const { taskId } = useParams();
   console.log('taskId -->', taskId);
