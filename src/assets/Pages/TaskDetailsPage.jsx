@@ -11,7 +11,7 @@ const TaskDetailsPage = () => {
 
   return (
     <>
-      {/* <h1>hi</h1> */}
+      
       <div>{detailItem.task}</div>
       <button type="button"><Link to= "/">Back</Link></button>
     </>

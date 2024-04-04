@@ -8,7 +8,7 @@ import { LuCheckCircle } from "react-icons/lu";
 const ListItem = ({ currentTask, remove }) => {
 
     return (
-        // <li>{currentTask.task}</li>
+        
 
         <li className='item'>
             <div  style={{ display: 'flex', gap: "10px" }}> <div>{currentTask.completed ? <LuCheckCircle size={30} /> : <MdRadioButtonUnchecked size={32} />}</div>
