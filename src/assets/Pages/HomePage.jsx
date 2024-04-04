@@ -3,9 +3,9 @@ import TasksList from "../../Components/TasksList";
 import tasksData from "../../tasks.json";
 import AddTask from "../../Components/AddForm";
 
-const HomePage = () => {
+const HomePage = ({tasks,setTasks}) => {
   // const [taskName, setTaskName] = useState("");
-  const [tasks, setTasks] = useState(tasksData)
+  // const [tasks, setTasks] = useState(tasksData)
 
   const handleSubmit = (e) => {
     console.log()
