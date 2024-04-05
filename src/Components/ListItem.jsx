@@ -18,7 +18,10 @@ const ListItem = ({ currentTask, remove }) => {
     };
 
     const handleSave = () => {
-        // Save changes
+        if (editedTask.trim() !== '') {
+            // Update the task content if not empty
+            currentTask.task = editedTask;
+        }
         setEditable(false);
         // You can send the edited task to a parent component to update the tasks array
     };
@@ -39,8 +42,8 @@ const ListItem = ({ currentTask, remove }) => {
             <>
                
                 <MdOutlineDataSaverOn style={{ cursor: "pointer", marginRight:"10px" }} size={24} onClick={handleSave} />
-                <MdCancel style={{ cursor: "pointer", marginRight:"10px" }} size={24} onClick={() => setEditable(false)} />
-               
+                <MdCancel style={{ cursor: "pointer", marginRight:"10px" }} size={24} onClick={() => {setEditable(false)
+                     setEditedTask(currentTask.task)}} /> 
             </>
         )}
         <GrEdit style={{ cursor: "pointer" }} size={24} onClick={handleEdit} />
