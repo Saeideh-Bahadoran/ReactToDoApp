@@ -9,6 +9,7 @@ import HomePage from "./assets/Pages/HomePage";
 import AboutPage from "./assets/Pages/AboutPage";
 import NotFoundPage from "./assets/Pages/NotFoundPage";
 import TaskDetailsPage from "./assets/Pages/TaskDetailsPage";
+import EditPage from "./assets/Pages/EditPage";
 // import tasksData from "tasks.json";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/not-found" element={<NotFoundPage />} />
         <Route path="/task-details/:taskId" element={<TaskDetailsPage tasks={tasks} />} />
+        <Route path="/edit" element={<EditPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

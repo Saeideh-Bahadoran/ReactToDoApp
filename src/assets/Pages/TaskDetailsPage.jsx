@@ -13,7 +13,8 @@ const TaskDetailsPage = ({tasks}) => {
     <>
       
       <div>{detailItem.task}</div>
-      <button type="button"><Link to= "/">Back</Link></button>
+      {/* <button type="button"><Link to= "/">Back</Link></button> */}
+      <Link to= "/"><button type="button">Back</button></Link>
     </>
   );
 };
