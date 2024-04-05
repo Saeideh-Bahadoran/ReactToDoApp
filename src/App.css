@@ -143,6 +143,7 @@ border-bottom: solid 1px #77afd0;
   justify-content: flex-end;
   gap: 20px;
 }
+
 .crossedOut{
   
   text-decoration: line-through;

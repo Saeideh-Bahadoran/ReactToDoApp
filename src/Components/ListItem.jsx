@@ -1,12 +1,10 @@
-import tasksData from '../tasks.json';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
-import { MdDeleteOutline } from "react-icons/md";
-import { MdRadioButtonUnchecked } from "react-icons/md";
+import { MdDeleteOutline, MdRadioButtonUnchecked } from "react-icons/md";
 import { LuCheckCircle } from "react-icons/lu";
 import { GrEdit } from "react-icons/gr";
-import Edit from '../assets/Pages/EditPage';
-;
+import { MdOutlineDataSaverOn, MdCancel } from "react-icons/md";
+
 const ListItem = ({ currentTask, remove }) => {
     const [editable, setEditable] = useState(false);
     const [editedTask, setEditedTask] = useState(currentTask.task);
@@ -23,7 +21,6 @@ const ListItem = ({ currentTask, remove }) => {
         // Save changes
         setEditable(false);
         // You can send the edited task to a parent component to update the tasks array
-        
     };
 
     return (
@@ -37,14 +34,27 @@ const ListItem = ({ currentTask, remove }) => {
                 )}
             </div>
             <div className='icons'>
-                <div>
-                    <GrEdit style={{ cursor: "pointer" }} size={24} onClick={handleEdit} />
-                </div>
-                <div>
-                    <MdDeleteOutline style={{ cursor: "pointer" }} size={24} onClick={() => remove(currentTask)} />
-                </div>
-            </div>
+    <div>
+        {editable && (
+            <>
+               
+                <MdOutlineDataSaverOn style={{ cursor: "pointer", marginRight:"10px" }} size={24} onClick={handleSave} />
+                <MdCancel style={{ cursor: "pointer", marginRight:"10px" }} size={24} onClick={() => setEditable(false)} />
+               
+            </>
+        )}
+        <GrEdit style={{ cursor: "pointer" }} size={24} onClick={handleEdit} />
+    </div>
+    <div>
+        <MdDeleteOutline style={{ cursor: "pointer" }} size={24} onClick={() => remove(currentTask)} />
+    </div>
+</div>
         </li>
     );
 };
+
 export default ListItem;
+
+
+//<MdOutlineDataSaverOn />
+//<MdCancel />
