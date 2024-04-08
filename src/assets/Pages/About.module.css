@@ -3,9 +3,9 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    background-color: #b7afaf;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
   }
   
   .title {
@@ -25,12 +25,37 @@
     font-size: 20px;
     font-weight: bold;
     color: #333;
-    margin-top: 20px;
+    margin-top: 3px;
+    margin-bottom: 1px;
   }
   
   .featuresList {
     list-style-type: disc;
     margin-left: 20px;
     color: #000000;
+    padding: 0.5px;
+  }
+  
+  .teamContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .teamMember {
+    text-align: center;
+    margin-right: 50px;
+  }
+  
+  .memberPhoto {
+    max-width: 140px; /* Adjust as needed */
+    max-height: 140px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+  
+  .memberName {
+    margin-top: 5px; /* Add margin to separate the name from the photo */
   }
   
