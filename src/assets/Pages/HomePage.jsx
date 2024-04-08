@@ -1,24 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import TasksList from "../../Components/TasksList";
-import tasksData from "../../tasks.json";
 import AddTask from "../../Components/AddForm";
 
-const HomePage = ({tasks,setTasks}) => {
-  // const [taskName, setTaskName] = useState("");
-  // const [tasks, setTasks] = useState(tasksData)
-
+const HomePage = ({ tasks, setTasks, isAddTaskVisible }) => {
   const handleSubmit = (e) => {
-    console.log()
     e.preventDefault();
     const newTask = {
       id: tasks.length.toString(),
       task: e.target.taskDescription.value,
       completed: false
     };
-    const updatedTasks = [...tasks, newTask]
+    const updatedTasks = [...tasks, newTask];
     setTasks(updatedTasks);
-    console.log(newTask)
-
+    e.target.reset(); // Clear the form
   };
 
   const removeItem = (item) => {
@@ -27,9 +21,8 @@ const HomePage = ({tasks,setTasks}) => {
 
   return (
     <div>
-       <AddTask onSubmit={handleSubmit} />
+      {isAddTaskVisible && <AddTask onSubmit={handleSubmit} />}
       <TasksList tasks={tasks} removeItem={removeItem} />
-
     </div>
   );
 };
