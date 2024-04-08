@@ -10,6 +10,7 @@ import AboutPage from "./assets/Pages/AboutPage";
 import NotFoundPage from "./assets/Pages/NotFoundPage";
 import TaskDetailsPage from "./assets/Pages/TaskDetailsPage";
 import EditPage from "./assets/Pages/EditPage";
+import ContactsPage from "./assets/Pages/ContactsPage";
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -37,6 +38,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage tasks={tasks} setTasks={setTasks} isAddTaskVisible={isAddTaskVisible} />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contacts" element={<ContactsPage/>} />
         <Route path="/not-found" element={<NotFoundPage />} />
         <Route path="/task-details/:taskId" element={<TaskDetailsPage tasks={tasks} />} />
         <Route path="/edit" element={<EditPage />} />
