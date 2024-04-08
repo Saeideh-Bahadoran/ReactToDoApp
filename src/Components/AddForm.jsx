@@ -3,22 +3,28 @@ import React, { useState } from "react";
 const AddTask = ({onSubmit}) => {
     const [taskDescription, setTaskDescription] = useState("");
     const handleTaskDescriptionInput = (e) => setTaskDescription(e.target.value);
-
-
+    const [isAddClick, setIsAddClick] = useState(false);
+    
+    const HandleAddClick = () => {
+      setIsAddClick(true);
+  };
 
     return ( 
-
+      
         <form onSubmit={(event) => onSubmit(event)}>
-        <label >
-          New task:
-          <input
+        
+          <div className="AddNewTask">
+            <label>
+              <input
             type="text"
             name="taskDescription"
-            placeholder="Task Description"
+            placeholder="What do you need to do? "
             value={taskDescription}
             onChange={handleTaskDescriptionInput}
-          />
-        </label>
+             />
+            </label>
+          </div>
+        
 
         {/* <label >
           Completed

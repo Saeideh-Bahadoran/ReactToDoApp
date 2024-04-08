@@ -30,28 +30,29 @@
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #5a53bc; /* Example background color */
+  background-color: #ddd8c9; /* Example background color */
   padding: 10px 10px; /* Example padding */
   z-index: 1000; /* Ensure it appears above other content */
 }
 
 .appName {
   padding: 15px;
-  font-family: serif;
-  color: #cad9e3;
-  font-size: large;
+  font-family: 'Bad Script', cursive;
+  color: #213547;
+  font-size:x-large;
 }
 
 /*NavBar css*/
 
 /*Footer css*/
 .footer {
+  
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #5a53bc; /* Example background color */
-  color: white; /* Example text color */
+  background-color: #ddd8c9; /* Example background color */
+  color: #213547; /* Example text color */
   text-align: center; /* Center text horizontally */
 }
 .footerItems {
@@ -63,8 +64,8 @@
 
 .footerImage {
   left: 0;
-  max-width: 100px; /* Limit image width to 100px */
-  max-height: 100px; /* Limit image height to 50px */
+  max-width: 50px; /* Limit image width to 100px */
+  max-height: 50px; /* Limit image height to 50px */
 }
 
 /*Footer css*/
@@ -75,9 +76,9 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 130px; /* Adjust the width as needed */
-  background-color: #5a53bc; /* Example background color */
-  color: white; /* Example text color */
+  width: 250px; /* Adjust the width as needed */
+  background-color: #ddd8c9; /* Example background color */
+  color: #213547; /* Example text color */
   padding: 1px; /* Reduce padding */
   display: flex;
   flex-direction: column; /* Display items in a column */
@@ -96,12 +97,12 @@
 }
 
 .sidebar a {
-  color: white;
+  color: #213547;
   text-align: center;
 }
 /*Sidebar css*/
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ddd8c9);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -127,7 +128,7 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #ddd8c9;
 }
 
 .item{
@@ -153,4 +154,11 @@ border-bottom: solid 1px #77afd0;
   background-color: #ddd8c9;
   padding: 16px 32px 64px 32px;
   border-radius: 16px;
+  font-family: cursive;
+}
+.AddNewTask{
+ 
+  display: flex;
+  justify-content: space-between;
+
 }
