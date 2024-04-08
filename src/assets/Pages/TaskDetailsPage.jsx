@@ -11,10 +11,12 @@ const TaskDetailsPage = ({tasks}) => {
 
   return (
     <>
+      <label >Your task description </label>
+      <div className="taskDetail">
+        {detailItem.task}
+        </div>
       
-      <div>{detailItem.task}</div>
-      {/* <button type="button"><Link to= "/">Back</Link></button> */}
-      <Link to= "/"><button type="button">Back</button></Link>
+      <Link to= "/"><button  className= "detailBackBtn" type="button">Back to the list</button></Link>
     </>
   );
 };

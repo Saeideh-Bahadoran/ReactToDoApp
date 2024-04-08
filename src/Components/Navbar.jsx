@@ -1,5 +1,5 @@
 
-import IconLogo from "../assets/todo-icon.png"
+import IconLogo from "../../image/logo1.png"
 function Navbar(){
     return(
         <nav className="navbar">

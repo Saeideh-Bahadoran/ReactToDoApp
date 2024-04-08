@@ -1,6 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { MdAddTask } from "react-icons/md";
+import { FaHome } from "react-icons/fa";
+import { ImAddressBook } from "react-icons/im";
+import { MdLibraryAdd } from "react-icons/md";
+import { BiSolidInfoSquare } from "react-icons/bi";
 
 const Sidebar = ({ toggleAddTaskVisibility }) => {
   const handleAddTaskClick = () => {
@@ -9,25 +13,26 @@ const Sidebar = ({ toggleAddTaskVisibility }) => {
 
   return (
     <div className="sidebar">
-      <ul>
-        <li>
+      <ul >
+        <li className="sidebarList">
           <NavLink to="/">
-            Home
+          <FaHome /> Home
           </NavLink>
         </li>
-        <li>
+        <li className="sidebarList">
           <NavLink to="/about">
-            About
+          <BiSolidInfoSquare /> About
           </NavLink>
         </li>
-        <li>
+        <li className="sidebarList">
           <NavLink to="/" onClick={handleAddTaskClick}>
-            Add new task <MdAddTask />
+            {/* <MdAddTask />  */}
+            <MdLibraryAdd />Add new task 
           </NavLink>
         </li>
-        <li>
+        <li className="sidebarList">
           <NavLink to="/contacts">
-            Contacts
+          <ImAddressBook /> Contacts
           </NavLink>
         </li>
       </ul>

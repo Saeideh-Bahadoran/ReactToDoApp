@@ -4,7 +4,7 @@ const AddTask = ({onSubmit}) => {
     const [taskDescription, setTaskDescription] = useState("");
     const handleTaskDescriptionInput = (e) => setTaskDescription(e.target.value);
     const [isAddClick, setIsAddClick] = useState(false);
-    
+
     const HandleAddClick = () => {
       setIsAddClick(true);
   };
@@ -14,25 +14,20 @@ const AddTask = ({onSubmit}) => {
         <form onSubmit={(event) => onSubmit(event)}>
         
           <div className="AddNewTask">
-            <label>
-              <input
+            
+              <input className="inputTask"
             type="text"
             name="taskDescription"
             placeholder="What do you need to do? "
             value={taskDescription}
             onChange={handleTaskDescriptionInput}
              />
-            </label>
+            
+
+            <button className= "addButton" type="submit">Add Task</button>
           </div>
-        
+      
 
-        {/* <label >
-          Completed
-        <input name="completed" type="checkbox" checked={completed}  onChange={handleCompletedInput}/>
-        </label> */}
-
-       
-        <button type="submit">Add Task</button>
       </form>
      );
 }

@@ -35,7 +35,7 @@ const ListItem = ({ currentTask, remove }) => {
         <li className='item'>
             <div style={{ display: 'flex', gap: "10px" }}>
                 <div onClick={handleToggleCompletion}>
-                    {completed ? <LuCheckCircle size={30} /> : <MdRadioButtonUnchecked size={32} />}
+                    {completed ? <LuCheckCircle size={30} style={{color: "#6bc2cf"}} /> : <MdRadioButtonUnchecked size={32} />}
                 </div>
                 {editable ? (
                     <>
