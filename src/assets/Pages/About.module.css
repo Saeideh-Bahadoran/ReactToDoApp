@@ -4,8 +4,9 @@
     margin: 20px auto;
     padding: 20px;
     background-color: #ddd8c9;
-    border: 3px solid #ffffff;
+    border: 3px solid #61dafbaa;
     border-radius: 50px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   }
   
   .title {
@@ -13,12 +14,16 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
+    border-bottom: solid 1px #77afd0;
   }
   
   .description {
+    text-align: left;
     font-size: 16px;
     line-height: 1.5;
-    color: #000000;
+    color: #213547;
+    border-bottom: solid 1px #77afd0;
+
   }
   
   .subtitle {
@@ -27,13 +32,18 @@
     color: #333;
     margin-top: 3px;
     margin-bottom: 1px;
+    border-bottom: solid 1px #77afd0;
+
   }
   
   .featuresList {
     list-style-type: disc;
     margin-left: 20px;
-    color: #000000;
+    color: #213547;
     padding: 0.5px;
+    text-align: left;
+    border-bottom: solid 1px #77afd0;
+
   }
   
   .teamContainer {

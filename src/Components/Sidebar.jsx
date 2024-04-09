@@ -16,23 +16,23 @@ const Sidebar = ({ toggleAddTaskVisibility }) => {
       <ul >
         <li className="sidebarList">
           <NavLink to="/">
-          <FaHome /> Home
+          <FaHome  style={{color: "#6bc2cf"}}/> Home
           </NavLink>
         </li>
         <li className="sidebarList">
           <NavLink to="/about">
-          <BiSolidInfoSquare /> About
+          <BiSolidInfoSquare style={{color: "#6bc2cf"}}/> About
           </NavLink>
         </li>
         <li className="sidebarList">
           <NavLink to="/" onClick={handleAddTaskClick}>
             {/* <MdAddTask />  */}
-            <MdLibraryAdd />New Task 
+            <MdLibraryAdd style={{color: "#6bc2cf"}}/>New Task 
           </NavLink>
         </li>
         <li className="sidebarList">
           <NavLink to="/contacts">
-          <ImAddressBook /> Contacts
+          <ImAddressBook style={{color: "#6bc2cf"}}/> Contacts
           </NavLink>
         </li>
       </ul>

@@ -6,7 +6,7 @@ const EditPage = () => {
 
     <label >
           Edit your task here: 
-          <input
+          <input className="EditForm"
             type="text"
             name="editTask"
             placeholder="Task Description"
