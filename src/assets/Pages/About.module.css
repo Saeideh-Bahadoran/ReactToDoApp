@@ -54,19 +54,34 @@
   }
   
   .teamMember {
+    margin-left: 50px;
     text-align: center;
     margin-right: 50px;
+    max-width: 50%; 
+    max-height: 50%;
   }
   
   .memberPhoto {
-    max-width: 140px; /* Adjust as needed */
-    max-height: 140px;
-    width: 140px;
-    height: 140px;
+    max-width: 70%; 
+    max-height: 50%;
     border-radius: 50%;
+    height: 200px;
+    width: 400px;
   }
   
   .memberName {
     margin-top: 5px; /* Add margin to separate the name from the photo */
+    color: #333;
   }
   
+
+.memberInfo a {
+  color: rgb(105, 198, 241); 
+}
+
+.memberInfo a:hover {
+  color: rgb(122, 119, 119); 
+}
+.memberInfo p {
+  color: #333;
+}

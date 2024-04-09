@@ -1,8 +1,6 @@
 // About.js
 import React from 'react';
 import styles from './About.module.css';
-import ruiFoto from '../../assets/rui.jpeg';
-import saideh from '../../assets/dedpool.jpg';
 
 const AboutPage = () => {
   return (
