@@ -15,8 +15,6 @@ const HomePage = ({ tasks, setTasks, isAddTaskVisible}) => {
     setTasks(updatedTasks);
     console.log("Form submitted"); // Check if the form submission is triggered
     e.target.reset(); // Clear the form
-    // e.target.taskDescription.value
-      
   };
 
   const removeItem = (item) => {
