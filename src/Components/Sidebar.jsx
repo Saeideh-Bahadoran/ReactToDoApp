@@ -27,7 +27,7 @@ const Sidebar = ({ toggleAddTaskVisibility }) => {
         <li className="sidebarList">
           <NavLink to="/" onClick={handleAddTaskClick}>
             {/* <MdAddTask />  */}
-            <MdLibraryAdd />Add new task 
+            <MdLibraryAdd />New Task 
           </NavLink>
         </li>
         <li className="sidebarList">

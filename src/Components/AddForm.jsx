@@ -2,12 +2,25 @@ import React, { useState } from "react";
 
 const AddTask = ({onSubmit}) => {
     const [taskDescription, setTaskDescription] = useState("");
-    const handleTaskDescriptionInput = (e) => setTaskDescription(e.target.value);
+    const handleTaskDescriptionInput = (e) =>{
+      setTaskDescription(e.target.value);
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        onSubmit(e); // Call the onSubmit function passed from parent component
+        setTaskDescription(""); // Reset the taskDescription state to clear the input field
+      };
+
+    } 
     const [isAddClick, setIsAddClick] = useState(false);
 
     const HandleAddClick = () => {
       setIsAddClick(true);
+      // setTaskDescription("")
+
   };
+
+
 
     return ( 
       
@@ -21,6 +34,7 @@ const AddTask = ({onSubmit}) => {
             placeholder="What do you need to do? "
             value={taskDescription}
             onChange={handleTaskDescriptionInput}
+            required
              />
             
 

@@ -36,7 +36,7 @@ function App() {
       <Footer />
 
       <Routes>
-        <Route path="/" element={<HomePage tasks={tasks} setTasks={setTasks} isAddTaskVisible={isAddTaskVisible} />} />
+        <Route path="/" element={<HomePage tasks={tasks} setTasks={setTasks} isAddTaskVisible={isAddTaskVisible}  />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contacts" element={<ContactsPage/>} />
         <Route path="/not-found" element={<NotFoundPage />} />

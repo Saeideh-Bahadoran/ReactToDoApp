@@ -2,7 +2,7 @@ import React from "react";
 import TasksList from "../../Components/TasksList";
 import AddTask from "../../Components/AddForm";
 
-const HomePage = ({ tasks, setTasks, isAddTaskVisible }) => {
+const HomePage = ({ tasks, setTasks, isAddTaskVisible}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newTask = {
@@ -13,6 +13,8 @@ const HomePage = ({ tasks, setTasks, isAddTaskVisible }) => {
     const updatedTasks = [...tasks, newTask];
     setTasks(updatedTasks);
     e.target.reset(); // Clear the form
+    // e.target.taskDescription.value
+      
   };
 
   const removeItem = (item) => {
