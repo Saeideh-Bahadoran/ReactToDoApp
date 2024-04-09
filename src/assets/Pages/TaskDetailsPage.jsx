@@ -11,13 +11,17 @@ const TaskDetailsPage = ({tasks}) => {
 
   return (
     <>
-      <label >Your task description </label>
+    <div className="datailContainer">
+
+       <label ><h3 >Your Task Description:</h3>  </label>
       <div className="taskDetail">
         {detailItem.task}
         </div>
       
       <Link to= "/"><button  className= "detailBackBtn" type="button">Back to the list</button></Link>
-    </>
+    
+    </div>
+     </>
   );
 };
 

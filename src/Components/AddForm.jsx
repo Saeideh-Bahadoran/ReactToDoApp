@@ -17,7 +17,7 @@ const AddTask = ({onSubmit}) => {
         
           <div className="AddNewTask">
             
-              <input className="inputTask"
+              <input className="inputTask" style={{placeItems: "center"}}
             type="text"
             name="taskDescription"
             placeholder="What do you need to do? "

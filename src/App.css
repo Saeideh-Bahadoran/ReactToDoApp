@@ -214,8 +214,23 @@ border-bottom: solid 1px #77afd0;
   border-radius: 16px;
   font-family: cursive;
   display: flex;
-  align-items: center;
+  
   justify-content: center;
  
+}
+.datailContainer{
+
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  
+  grid-gap: 10px;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  
+}
+.inputTask{
+  place-items: center;
+  
 }
 
