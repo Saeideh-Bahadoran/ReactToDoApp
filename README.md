@@ -40,5 +40,5 @@ main.jsx
   - Adding categories for Tasks
   - Adding Time and Date of creation, edit, and Complete for each Task
 # Links
-- [Slides Link](insert link here)
+- [Slides Link](https://prezi.com/view/0Pk5W9wL5CEtKWITPkOS/)
 - [Github repository Link](https://github.com/Folgad0/ReactToDoApp)
