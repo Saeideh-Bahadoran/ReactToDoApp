@@ -18,20 +18,23 @@
 - Creating New Tasks: Quickly add new tasks to your list with the easy-to-use task creation feature.
 - Editing Existing Tasks: Make changes to existing tasks, including the task name and its completion state.
 # Data structure
-Pages:
-  -HomePage
-  -EditPage
-  -NotFoundPage
-  -TaskDetailsPage
-  -contactsPage
-  -AboutPage
-Components:
-  -AddForm
-  -Footer
-  -ListItem
-  -Navbar
-  -Sidebar
-  -TaskList
+**`Pages:`**
+
+  -HomePage <br>
+  -EditPage <br>
+  -NotFoundPage <br>
+  -TaskDetailsPage <br>
+  -contactsPage <br>
+  -AboutPage <br>
+  
+  **`Components:`**
+
+  -AddForm <br>
+  -Footer <br>
+  -ListItem <br>
+  -Navbar <br>
+  -Sidebar <br>
+  -TaskList <br>
 App.jsx
 main.jsx
 # Future Additional Features (Under Construction)
