@@ -13,15 +13,15 @@ const ContactsPage = () => {
             <p className={styles.memberName}>Saeideh</p>
             <img src={saideh} alt="Saeideh" className={styles.memberPhoto} />
             <div className={styles.memberInfo}>
-            <p>Email <a href="Saeideh.bahadoran@gmail.com">Saeideh.bahadoran@gmail.com</a></p>
+            <p>Email <a>Saeideh.bahadoran@gmail.com</a></p>
               <a href="https://github.com/Saeideh-Bahadoran">Saeideh's GitHub</a>
             </div>
           </div>
           <div className={styles.teamMember}>
-            <p className={styles.memberName}>Rui Folgado</p>
+            <p className={styles.memberName}>Rui</p>
             <img src={ruiFoto} alt="Rui" className={styles.memberPhoto} />
             <div className={styles.memberInfo}>
-              <p>Email <a href="rui.folgado@hotmail.com">rui.folgado@hotmail.com</a></p>
+              <p>Email <a >rui.folgado@hotmail.com</a></p>
               <a href="https://github.com/Folgad0" backgroundColor='red'>Rui's GitHub</a>
             </div>
           </div>
