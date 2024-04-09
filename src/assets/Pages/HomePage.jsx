@@ -11,7 +11,9 @@ const HomePage = ({ tasks, setTasks, isAddTaskVisible }) => {
       completed: false
     };
     const updatedTasks = [...tasks, newTask];
+    console.log("Updated tasks:", updatedTasks); // Check the updated tasks
     setTasks(updatedTasks);
+    console.log("Form submitted"); // Check if the form submission is triggered
     e.target.reset(); // Clear the form
   };
 
