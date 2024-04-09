@@ -35,8 +35,12 @@
   -Navbar <br>
   -Sidebar <br>
   -TaskList <br>
-App.jsx
-main.jsx
+
+  
+  **`App.jsx`**
+  **`main.jsx`**
+
+
 # Future Additional Features (Under Construction)
   - Create API
   - Use Data base
