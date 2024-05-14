@@ -1,0 +1,241 @@
+#root {
+  width: 640px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/*NavBar css*/
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  margin: 10px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.icon-logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 8px;
+}
+.navItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ddd8c9; /* Example background color */
+  padding: 10px 10px; /* Example padding */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.appName {
+  padding: 30px;
+  font-family: 'Bad Script', cursive;
+  color: #213547;
+  font-size:x-large;
+}
+
+/*NavBar css*/
+
+/*Footer css*/
+.footer {
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ddd8c9; /* Example background color */
+  color: #213547; /* Example text color */
+  text-align: center; /* Center text horizontally */
+}
+.footerItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerImage {
+  left: 0;
+  max-width: 50px; /* Limit image width to 100px */
+  max-height: 50px; /* Limit image height to 50px */
+}
+
+/*Footer css*/
+
+/*Sidebarcss*/
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px; /* Adjust the width as needed */
+  background-color: #ddd8c9; /* Example background color */
+  color: #213547; /* Example text color */
+  padding: 1px; /* Reduce padding */
+  display: flex;
+  flex-direction: column; /* Display items in a column */
+  justify-content: center; /* Align items at the top */
+  align-items: center;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #213547;
+  text-align: center;
+}
+/*Sidebar css*/
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ddd8c9);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #ddd8c9;
+}
+
+.item{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin: 8px 0;
+border-bottom: solid 1px #77afd0;
+}
+.icons{
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.crossedOut{
+  
+  text-decoration: line-through;
+  color: #555;
+}
+.taskList{
+  background-color: #ddd8c9;
+  padding: 16px 32px 64px 32px;
+  border-radius: 16px;
+  font-family: cursive;
+}
+.AddNewTask{
+ 
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red;
+  padding: 20px 10px;
+  background-color: #ddd8c9; */
+  /* padding: 16px 32px 64px 32px; */
+  border-radius: 16px;
+  /* font-family: cursive; */
+  
+
+}
+.inputTask{
+  padding-left: 32px;
+  flex:3 1 70% ;
+  background-color: #ddd8c9;
+  border-top-left-radius:16px;
+  border-bottom-left-radius: 16px;
+  border: none;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: cursive;
+ 
+}
+.inputTask:focus-visible{
+  border: solid 1px red;
+}
+.addButton{
+  background-color: #6bc2cf;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.sidebarList{
+  border-bottom: solid 1px #77afd0;
+
+}
+
+.detailBackBtn{
+  background-color: #6bc2cf;
+  margin: 100px;
+  border-radius: 8px;
+  
+}
+.taskDetail{
+  width: 400px;
+  border: solid 2px;
+  background-color: #ddd8c9;
+  padding: 16px 32px 64px 32px;
+  border-color: #6bc2cf;
+  border-radius: 16px;
+  font-family: cursive;
+  display: flex;
+  
+  justify-content: center;
+ 
+}
+.datailContainer{
+
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  
+  grid-gap: 10px;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  
+}
+.inputTask{
+  place-items: center;
+  
+}
+.EditForm{
+  margin-bottom:5px ;
+}
+

@@ -1,0 +1,87 @@
+/* About.module.css */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd8c9;
+    border: 3px solid #61dafbaa;
+    border-radius: 50px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #77afd0;
+  }
+  
+  .description {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #213547;
+    border-bottom: solid 1px #77afd0;
+
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    border-bottom: solid 1px #77afd0;
+
+  }
+  
+  .featuresList {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #213547;
+    padding: 0.5px;
+    text-align: left;
+    border-bottom: solid 1px #77afd0;
+
+  }
+  
+  .teamContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .teamMember {
+    margin-left: 50px;
+    text-align: center;
+    margin-right: 50px;
+    max-width: 50%; 
+    max-height: 50%;
+  }
+  
+  .memberPhoto {
+    max-width: 70%; 
+    max-height: 50%;
+    border-radius: 50%;
+    height: 200px;
+    width: 400px;
+  }
+  
+  .memberName {
+    margin-top: 5px; /* Add margin to separate the name from the photo */
+    color: #333;
+  }
+  
+
+.memberInfo a {
+  color: rgb(105, 198, 241); 
+}
+
+.memberInfo a:hover {
+  color: rgb(122, 119, 119); 
+}
+.memberInfo p {
+  color: #333;
+}
